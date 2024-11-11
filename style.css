@@ -1,62 +1,98 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
 }
-header {
-    width: 100%;
-    background-color: white;
-    padding: 10px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-wrap: nowrap; 
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
 }
-
-
-.logo {
-    font-size: 1.8rem;
-    color: #5e83ce;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    margin: 0; 
+header ul{
+	display: flex;
+	list-style-type: none;
 }
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0; 
-}
-
-nav ul li a {
-    color: black;
-    font-size: 1rem;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #f0f0f0;
+header ul li{
+	margin-left: 2rem;
 }
 
 
-section img{
-    display: block;
-    margin: 20px auto;
-    max-width: auto;
-    height: 700px;
+#banner{
+	width: 100%;
+	height: 30rem;
+	background: url(VRBO_DESERT_BRAND_vrbo_hero.jpeg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-
-
-
-
-  
+#banner h1{
+	color: white;
+}
+#banner #search{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	border: 1px solid grey;
+	background: white;
+	border-radius: 15px;
+	padding: 10px;
+}
+#banner #search .search-param {
+	margin: 0 5px;
+	flex-grow: 1;
+	height: 2rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	background: white;
+}
+#banner #search .search-button{
+	flex-grow: 0.3;
+	height: 2rem;
+	border-radius: 15px;
+	background: #191e3b;
+	color: white;
+}
+.gallery{
+	padding-top: 3rem;
+	padding-left: 1rem;
+}
+.rotary{
+	display: flex;
+	overflow: scroll;
+	padding-bottom: 2rem;
+}
+.rotary-card1{
+	width: 15rem;
+	height: 8rem;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.rotary-card1 h3{
+	display: block;
+	text-align: center;
+}
+.rotary-card1 img{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.rotary-card2{
+	width: 15rem;
+	height: 8rem;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+	margin-left: 10px;
+}
+.rotary-card2 h3{
+	height: 0;
+}
+.rotary-card2 img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
